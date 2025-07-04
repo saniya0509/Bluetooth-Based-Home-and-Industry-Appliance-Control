@@ -1,0 +1,66 @@
+#include <LiquidCrystal.h>
+  LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
+  void setup() {
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  Serial.begin(9600);
+  lcd.begin(16, 2);
+  lcd.print("ANDROID BASED");
+  lcd.setCursor(0,1);
+  lcd.print("HOME AUTOMATION");
+  Serial.print("SMARTPHONE BASED HOME AUTOMATION BY ARDUINO");
+}
+void loop() {
+  if (Serial.available() > 0)
+  { 
+    char c = Serial.read();
+    if (c == 'L')
+    {
+     
+    digitalWrite(10,HIGH);
+    Serial.print("AC LOAD 1 ON");
+    lcd.clear();
+    lcd.print("*BULB ON*");
+    }
+
+    if (c == 'l')
+    {
+     
+     digitalWrite(10,LOW);
+     Serial.print("AC LOAD 1 OFF");
+     lcd.clear();
+     lcd.print("*BULB OFF*");
+    }
+    
+    if(c=='F')
+    {
+     digitalWrite(11,HIGH);
+     Serial.print("DC LOAD1 ON");
+     lcd.clear();
+     lcd.print("*FAN ON*");
+    }
+    
+    if(c=='f')
+    {
+     digitalWrite(11,LOW);
+     lcd.clear();
+     lcd.print("FAN OFF");
+    }
+    
+    if(c=='A')
+    {
+     digitalWrite(10,HIGH);
+     digitalWrite(11,HIGH);
+     lcd.clear();
+     lcd.print("BULB & FAN ON");
+    }
+
+    if(c=='a')
+    {
+     digitalWrite(10,LOW);
+     digitalWrite(11,LOW);
+     lcd.clear();
+     lcd.print("BULB & FAN OFF");
+    }
+  }
+}
