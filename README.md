@@ -93,6 +93,41 @@ Ensured the LCD provides correct status updates.
 Confirmed safe operation of relays and isolation between AC and control circuit.
 https://github.com/saniya0509/Bluetooth-Based-Home-and-Industry-Appliance-Control/blob/467518268c55b60a18779e093d2515c787d7ecb7/Picture6.png
 
+Future Development
+
+To enhance functionality, usability, and scalability, the following improvements can be considered for future versions of this project:
+
+🌐 IoT Integration
+
+Upgrade the system to use Wi-Fi or MQTT protocols for global access and control via the Internet.
+
+Integrate with cloud platforms (e.g., Blynk, Firebase, or ThingSpeak) for remote monitoring and data logging.
+
+📶 Extended Range Communication
+
+Replace or amplify the Bluetooth module with Bluetooth 5.0, Wi-Fi, or LoRa for wider communication coverage.
+
+📲 Advanced Android Application
+
+Build a custom Android app with a graphical user interface (GUI), voice control, status display, and automation scheduling.
+
+🔧 Compact PCB Design
+
+Develop a custom PCB layout using relay modules and Arduino Nano to reduce the circuit size and improve robustness.
+
+🧠 Smart Automation
+
+Integrate sensors (temperature, motion, light) to enable automatic switching of devices based on environmental conditions.
+
+🗣 Voice Assistant Integration
+
+Add support for Google Assistant, Alexa, or Siri to control appliances using voice commands.
+
+✅ Safety & Testing Enhancements
+
+Implement safety checks for relay modules and appliances.
+
+Automate component testing before deployment to improve reliability.
 
 
 
