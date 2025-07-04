@@ -35,5 +35,63 @@ Software
 | **Windows/Linux OS**                                 | For running Arduino IDE and handling serial communication.   |
 
 Implementation
+Hardware & Software Workflow
+Circuit Design & Hardware Setup
+
+Assembled components including:
+
+Arduino Uno (ATmega328)
+
+HC-05 Bluetooth module
+
+Relay modules to control AC/DC loads
+
+16x2 LCD for displaying device status
+
+RPS (Regulated Power Supply) for stable voltage
+
+Connected relays to digital output pins of Arduino to control:
+
+Light Bulb (AC load)
+
+DC Fan (DC load)
+
+Integrated the LCD with Arduino using LiquidCrystal library to show real-time feedback.
+
+Arduino Programming
+
+Developed an Arduino sketch that:
+
+Initializes the LCD and serial communication.
+
+Waits for command input via Bluetooth (from smartphone).
+
+Controls relays based on commands:
+
+'L'/'l' → Turn ON/OFF Light
+
+'F'/'f' → Turn ON/OFF Fan
+
+'A'/'a' → Control both Light & Fan
+
+Displays current status on LCD (e.g., “BULB ON”, “FAN OFF”).
+
+Bluetooth Communication
+
+Paired smartphone with HC-05 module (default PIN: 1234 or 0000).
+
+Used a Bluetooth Terminal App or custom-built Android app to send control commands.
+
+Arduino receives characters via serial (Serial.read()) and takes corresponding action.
+
+Testing & Validation
+
+Verified real-time control of appliances.
+
+Ensured the LCD provides correct status updates.
+
+Confirmed safe operation of relays and isolation between AC and control circuit.
+
+
 
 
