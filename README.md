@@ -91,6 +91,7 @@ Verified real-time control of appliances.
 Ensured the LCD provides correct status updates.
 
 Confirmed safe operation of relays and isolation between AC and control circuit.
+https://github.com/saniya0509/Bluetooth-Based-Home-and-Industry-Appliance-Control/blob/467518268c55b60a18779e093d2515c787d7ecb7/Picture6.png
 
 
 
